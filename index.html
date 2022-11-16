@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseña tu Super Heroe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<body>
+    <section class="pagina">
+       <!-- ] <section class="pagina-cargando">
+            <div class="puntos"></div>
+            <div class="puntos"></div>
+            <div class="puntos"></div>
+        </section> -->
+        <section class="pagina-principal">
+            <section class="contenedor-info-principal">
+                <nav class="enlaces">
+                    <img src="./Logo Avengers.png" alt="">
+                    <a href="#">Nuevos</a>
+                    <a href="#">Exclusivos</a>
+                    <a href="#">Vender</a>
+                </nav>
+                <section class="contenedor-texto">
+                    <p>Diseña el traje de tu</p>
+                    <h2 class="titulo">Super Heroe</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, iusto natus voluptate in magnam fuga dignissimos nam itaque dicta distinctio, laborum sequi adipisci numquam! Nemo quaerat officia accusamus aliquam quia.</p>
+                </section>
+                <section class="contenedor-targetas">
+                    <div class="tarjeta">
+                        <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" onclick="myFunction()" src="./ant-man2 1.png" alt="Smiley" width="220" height="295">
+                    </div>
+                    <div class="tarjeta">
+                        <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" onclick="myFunction()" src="./capitan-america 1.png" alt="Smiley" width="220" height="295">
+                    </div>
+                    <div class="tarjeta">
+                        <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" onclick="myFunction()" src="./spiderman 1.png" alt="Smiley" width="220" height="295">
+                    </div>
+                </section>
+            </section>
+            <section class="contenedor-info-secundaria">
+                <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="./Logo Avengers.png" alt="Smiley" width="220" height="295">
+
+            </section>
+        </section>
+        <section class="pagina-modal hidden">
+            <section class="modal">
+            </section>
+        </section>
+
+    </section>
+    <dialog id="myDialog"><img src="./iron-man 1.png" alt="Smiley" width="220" height="295"></dialog>
+
+    <script>
+        function bigImg(x) {
+          x.style.height = "360px";
+          x.style.width = "300px";
+        }
+        
+        function normalImg(x) {
+          x.style.height = "295px";
+          x.style.width = "220px";
+        }
+
+        function myFunction() { 
+            document.getElementById("myDialog").showModal(); 
+        } 
+    </script>
+    
+        
+
+</body>
+
+</html>
